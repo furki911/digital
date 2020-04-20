@@ -1,0 +1,127 @@
+.description {
+   display: flex;
+
+   &__content {
+      flex-basis: 40%;
+      margin: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem 10rem;
+      margin-left: 10rem;
+
+      &__text {
+         &--heading {
+            font-family: cursive;
+         }
+
+         &--job {
+            font-size: 1.4rem;
+         }
+
+         &--paragraph {
+            margin: 2rem 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+         }
+      }
+
+      &__graph {
+
+         &--item {
+            margin: 3rem 0;
+            &--container {
+               display: flex;
+               justify-content: space-between;
+               width: 100%;
+            }
+
+            &--heading {
+               font-weight: bold;
+            }
+
+            &--number {
+               width: 20%;
+               text-align: right;
+            }
+
+            &--score {
+               width: 80%;
+               background-image: linear-gradient(to right, $color-primary, $color-secondary);
+               border-radius: 100px;
+            }
+
+            &--score-max {
+               
+               width: 100%;
+               background-color: $color-grey-light-2;
+               border-radius: 100px;
+            }
+         }
+
+      }
+   }
+
+   &__image {
+      flex-basis: 60%;
+      display: flex;
+      
+      margin: 5rem 0;
+
+      &--img {
+         flex-basis: 50%;
+         background-image: url('../img/anita.png');
+         background-size: cover;
+         background-position: top center;
+         background-repeat: no-repeat;
+      }
+
+      &--content {
+         flex-basis: 50%;
+         background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: flex-start;
+         color: $color-grey-light-1;
+         padding: 8rem 5rem;
+
+         &--top {
+
+            &--heading {
+               color: currentColor;
+               margin-bottom: 1rem;
+            }
+
+            &--paragraph {
+               color: currentColor;
+               font-size: 1.3rem;
+               line-height: 1.8;
+            }
+         }
+
+         &--bottom {
+            display: flex;
+
+            &__item {
+               width: 5.5rem;
+               height: 5.5rem;
+               border-radius: 50%;
+               background-color: $color-grey-light-1;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               &:not(:last-child) {
+                  margin-right: 1rem;
+               }
+
+               svg {
+                  width: 50%;
+                  height: 50%;
+               }
+            }
+         }
+      }
+   }
+}

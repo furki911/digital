@@ -1,0 +1,50 @@
+.our-team {
+   max-width: 120rem;
+   margin: 10rem auto;
+   margin-bottom: 0;
+   text-align: center;
+
+   &__header {
+      font-family: cursive;
+   }
+
+   &__paragraph {
+      font-size: 1.2rem;
+      margin: 5rem;
+      line-height: 1.6;
+   }
+
+   &__members {
+
+      display: flex;
+      background-color: $color-grey-light-3;
+      justify-content: center;
+      margin-top: 20rem;
+
+      &__item {
+         padding-bottom: 1rem;
+         transform: translateY(-30%);
+         &:not(:last-child) {
+            margin-right: 1.5rem;
+         }
+         
+         figure {
+            overflow: hidden;
+            img {
+               border-radius: 3px;
+               width: 100%;
+            }
+         }
+
+         &__name {
+            margin-top: 2rem;
+         }
+
+         &__job {
+            color: $color-grey-dark-2;
+            font-size: 1.2rem;
+            margin-top: .5rem;
+         }
+      }
+   }
+}

@@ -1,0 +1,16 @@
+.features {
+   position: relative;
+   max-width: 120rem;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transform: translateY(-25%);
+
+   z-index: 1;
+
+
+   & > * {
+      flex-basis: 30%;
+   }
+}

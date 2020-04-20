@@ -1,0 +1,74 @@
+.navbar {
+   
+   background-image: linear-gradient(to right bottom, rgba($color-primary,.7), rgba($color-secondary,.7)),
+   url('../img/Header-bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   clip-path: ellipse(90% 80% at 50% 20%);
+   height: 100vh;
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 10rem;
+
+      &--link {      // Ul element
+         
+         display: flex;
+         li {
+            list-style: none;
+            font-size: 1.4rem;
+
+            &:not(:last-child) {
+               margin-right: .5rem;
+            }
+         }
+
+         &--items {
+            text-decoration: none;
+            color: #f7f7f7;
+            padding: 1rem .75rem;
+            border-bottom: 2px solid transparent;
+            font-weight: 600;
+            transition: all .2s;
+            outline: none;
+
+            &:hover,
+            &:focus {
+               border-bottom: 2px solid #f7f7f7;  
+               color: #fff;
+            }
+         }
+      }
+   }
+
+   &__content {
+      max-width: 80rem;
+      margin: 0 auto;
+      margin-top: 10rem;
+      text-align: center;
+      color: #f7f7f7;
+      overflow: hidden;
+
+      &--heading {
+         font-family: cursive; 
+         margin: 2rem 0;
+         color: currentColor;
+      }
+
+      &--sub {
+         margin: 2rem 0;
+         color: currentColor;
+      }
+
+      &--paragraph {
+         padding: 0 12rem;
+         font-size: 1.2rem;
+         line-height: 1.2;
+         margin: 3rem 0;
+         color: $color-grey-light-1;
+      }
+   }
+}

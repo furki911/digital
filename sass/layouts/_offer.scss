@@ -1,0 +1,116 @@
+.offer {
+
+   display: flex;
+   background-color: $color-grey-light-3;
+   
+   &__left {
+      flex-basis: 40%;
+      background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__content {
+         width: 100%;
+         height: 80%;
+         transform: translateX(50%);
+         display: flex;
+
+         &--left {
+            flex-basis: 50%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &--heading {
+               font-family: cursive;
+            }
+
+            span {
+               font-size: 1.6rem;
+               font-weight: bold;
+               margin: 1rem 0;
+            }
+
+            &--price {
+               background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+               -webkit-background-clip: text;
+               background-clip: text;
+               color: transparent;
+            }
+
+            &--paragraph {
+               padding: 0 2rem;
+               font-size: 1.2rem;
+               line-height: 1.6;
+            }
+         }
+
+         &--right {
+            background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+            flex-basis: 50%;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &--heading {
+               color: currentColor;
+               margin-bottom: .5rem;
+            }
+
+            span {
+               color: currentColor;
+               font-size: 1.6rem;
+               font-weight: bold;
+               margin-bottom: 2rem;
+            }
+
+            ul {
+               list-style: none;
+               font-size: 1.2rem;
+               margin: 2rem;
+
+               li {
+                  &:not(:last-child) {
+                     margin-bottom: .75rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+
+
+   &__right {
+      flex-basis: 60%;
+      padding: 5rem 0;
+
+      & > * {
+         margin-left: 40rem;
+         margin-right: 5rem;
+      }
+
+      &__heading {
+         font-family: cursive;
+      }
+
+      &__paragraph {
+
+         span {
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 2rem;
+         }
+
+         line-height: 1.6;
+         margin-top: 2rem;
+         font-size: 1.2rem;
+      }
+   }
+}
