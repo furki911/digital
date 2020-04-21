@@ -448,7 +448,15 @@ h6 {
           background-image: linear-gradient(to right bottom, #de813c, #3f519a);
           -webkit-background-clip: text;
           background-clip: text;
-          color: transparent; }
+          color: transparent;
+          font-family: 'Times New Roman', Times, serif; }
+          .offer__left__content--left--price--sm {
+            font-size: 5.5rem !important;
+            display: inline-block;
+            background-image: linear-gradient(to right bottom, #de813c, #3f519a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent; }
         .offer__left__content--left--paragraph {
           padding: 0 2rem;
           font-size: 1.2rem;
