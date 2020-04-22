@@ -8,22 +8,69 @@
    clip-path: ellipse(90% 80% at 50% 20%);
    height: 100vh;
 
+   @media only screen and (max-width: $bp-largest) {
+      height: 80vh;
+   }
+
+   @media only screen and (max-width: $bp-larger) {
+      height: 70vh;
+   }
+
+   @media only screen and (max-width: $bp-small) {
+      clip-path: none;
+      height: auto;
+      padding-bottom: 5rem;
+   }
+
+
+   @media only screen and (max-height: 65em) {
+      clip-path: none;
+   }
+
+   @media only screen and (max-height: 50em) {
+      clip-path: none;
+      height: auto;
+      padding-bottom: 5rem;
+   }    
+
    &__header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 1.5rem 10rem;
 
+      
+      @media only screen and (max-width: $bp-medium) {
+         flex-direction: column;
+         justify-content: space-between;
+      } 
+
+
       &--link {      // Ul element
          
          display: flex;
+
          li {
             list-style: none;
             font-size: 1.4rem;
 
             &:not(:last-child) {
                margin-right: .5rem;
+
+               @media only screen and (max-width: $bp-smaller) {
+                  margin: 0;
+                  margin-bottom: 1rem;
+               }
             }
+         }
+
+         @media only screen and (max-width: $bp-medium) {
+            margin-top: 1.5rem;
+         } 
+
+         @media only screen and (max-width: $bp-smaller) {
+            flex-direction: column;
+            text-align: center;
          }
 
          &--items {
@@ -56,11 +103,19 @@
          font-family: cursive; 
          margin: 2rem 0;
          color: currentColor;
+
+         @media only screen and (max-width: $bp-smaller) {
+            font-size: 4rem;
+         }
       }
 
       &--sub {
          margin: 2rem 0;
          color: currentColor;
+
+         @media only screen and (max-width: $bp-smaller) {
+            font-size: 2rem;
+         }
       }
 
       &--paragraph {
@@ -69,6 +124,10 @@
          line-height: 1.2;
          margin: 3rem 0;
          color: $color-grey-light-1;
+
+         @media only screen and (max-width: $bp-smaller) {
+            padding: 0 2rem;
+         }
       }
    }
 }

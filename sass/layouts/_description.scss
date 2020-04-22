@@ -1,6 +1,10 @@
 .description {
    display: flex;
 
+   @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+   }
+
    &__content {
       flex-basis: 40%;
       margin: 5rem;
@@ -9,6 +13,22 @@
       justify-content: space-between;
       padding: 2rem 10rem;
       margin-left: 10rem;
+
+      @media only screen and (max-width: $bp-largest) {
+         padding: 0rem 2rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+         margin-left: 5rem;
+      } 
+
+      @media only screen and (max-width: $bp-medium) {
+         flex-basis: 50%;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+         margin: 2rem;
+      }
 
       &__text {
          &--heading {
@@ -65,8 +85,11 @@
    &__image {
       flex-basis: 60%;
       display: flex;
-      
       margin: 5rem 0;
+
+      @media only screen and (max-width: $bp-medium) {
+         margin: 0;
+      }
 
       &--img {
          flex-basis: 50%;
@@ -74,6 +97,14 @@
          background-size: cover;
          background-position: top center;
          background-repeat: no-repeat;
+
+         @media only screen and (max-width: $bp-big) {
+            flex-basis: 60%;
+         }
+
+         @media only screen and (max-width: $bp-smaller) {
+            display: none;
+         }
       }
 
       &--content {
@@ -85,6 +116,20 @@
          align-items: flex-start;
          color: $color-grey-light-1;
          padding: 8rem 5rem;
+
+         @media only screen and (max-width: $bp-big) {
+            padding: 8rem 2rem;
+         } 
+
+
+         @media only screen and (max-width: $bp-medium) {
+            padding: 8rem 5rem;
+         }
+
+         @media only screen and (max-width: $bp-smaller) {
+            flex-basis: 100%;
+            padding: 4rem 2rem;
+         }
 
          &--top {
 
@@ -111,6 +156,10 @@
                display: flex;
                justify-content: center;
                align-items: center;
+
+               @media only screen and (max-width: $bp-medium) {
+                  margin-top: 2rem;
+               }
 
                &:not(:last-child) {
                   margin-right: 1rem;

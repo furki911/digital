@@ -30,11 +30,24 @@
          align-items: center;
          border-radius: 50%;
 
-         &:not(:last-child) {
-            margin-right: 3rem;
+         @media only screen and (max-width: $bp-medium) {
+            width: 5.5rem;
+            height: 5.5rem;
          }
 
-         
+         @media only screen and (max-width: $bp-smaller) {
+            width: 3.5rem;
+            height: 3.5rem;
+         }
+
+         &:not(:last-child) {
+            margin-right: 3rem;
+
+            @media only screen and (max-width: $bp-medium) {
+               margin-right: 1.5rem;
+            }
+         }
+
          &:hover svg{
             transform: scale(1.2);
          }

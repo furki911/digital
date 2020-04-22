@@ -1,6 +1,55 @@
-h1 { font-size: 8rem; }
-h2 { font-size: 6rem; }
-h3 { font-size: 5rem; }
-h4 { font-size: 4rem; }
-h5 { font-size: 3rem; }
-h6 { font-size: 2rem; }
+h1 { 
+   font-size: 8rem;
+
+   @media only screen and (max-width: $bp-small) {
+      font-size: 6rem;
+   }
+}
+
+h2 { 
+   font-size: 6rem;
+
+   @media only screen and (max-width: $bp-small) {
+      font-size: 4rem;
+   }
+}
+
+h3 { 
+   font-size: 5rem;
+
+   @media only screen and (max-width: $bp-largest) {
+      font-size: 4rem;         
+   }
+
+   @media only screen and (max-width: $bp-small) {
+      font-size: 3.5rem;
+   }
+}
+
+h4 { 
+   font-size: 4rem;
+
+   @media only screen and (max-width: $bp-largest) {
+      font-size: 3rem;         
+   }
+
+   @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+   }
+}
+
+h5 { 
+   font-size: 3rem;
+
+   @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+   }
+}
+
+h6 { 
+   font-size: 2rem;
+
+   @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
+   }
+}

@@ -6,11 +6,40 @@
    justify-content: space-between;
    align-items: center;
    transform: translateY(-25%);
-
    z-index: 1;
 
+   @media only screen and (max-width: $bp-largest) {
+      transform: translateY(-40%);
+   }
+
+   @media only screen and (max-width: $bp-large) {
+      transform: translateY(-30%);
+   }
+
+   @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      transform: translateY(-10%);
+   }
+
+   @media only screen and (max-width: $bp-small) {
+      transform: translateY(0);
+      margin: 8rem 0;
+   }
+
+
+   @media only screen and (max-height: 65em) {
+      transform: translateY(0);
+   }
 
    & > * {
       flex-basis: 30%;
+
+      @media only screen and (max-width: $bp-medium) {
+         width: 70%;
+
+         &:not(:last-child) {
+            margin-bottom: 3rem;
+         }
+      }
    }
 }
