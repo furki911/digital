@@ -132,10 +132,7 @@ h6 {
       clip-path: none;
       height: auto;
       padding-bottom: 5rem; } }
-  @media only screen and (max-height: 65em) {
-    .navbar {
-      clip-path: none; } }
-  @media only screen and (max-height: 50em) {
+  @media only screen and (max-height: 45em) {
     .navbar {
       clip-path: none;
       height: auto;
@@ -165,8 +162,7 @@ h6 {
           margin-top: 1.5rem; } }
       @media only screen and (max-width: 31.25em) {
         .navbar__header--link {
-          flex-direction: column;
-          text-align: center; } }
+          display: none; } }
       .navbar__header--link--items {
         text-decoration: none;
         color: #f7f7f7;
@@ -185,6 +181,9 @@ h6 {
     text-align: center;
     color: #f7f7f7;
     overflow: hidden; }
+    @media only screen and (max-height: 50em) {
+      .navbar__content {
+        margin-top: 5rem; } }
     .navbar__content--heading {
       font-family: cursive;
       margin: 2rem 0;
@@ -231,7 +230,7 @@ h6 {
     .features {
       transform: translateY(0);
       margin: 8rem 0; } }
-  @media only screen and (max-height: 65em) {
+  @media only screen and (max-height: 60em) {
     .features {
       transform: translateY(0); } }
   .features > * {

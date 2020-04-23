@@ -22,12 +22,7 @@
       padding-bottom: 5rem;
    }
 
-
-   @media only screen and (max-height: 65em) {
-      clip-path: none;
-   }
-
-   @media only screen and (max-height: 50em) {
+   @media only screen and (max-height: 45em) {
       clip-path: none;
       height: auto;
       padding-bottom: 5rem;
@@ -69,8 +64,7 @@
          } 
 
          @media only screen and (max-width: $bp-smaller) {
-            flex-direction: column;
-            text-align: center;
+            display: none;
          }
 
          &--items {
@@ -98,6 +92,10 @@
       text-align: center;
       color: #f7f7f7;
       overflow: hidden;
+
+      @media only screen and (max-height: 50em) {
+         margin-top: 5rem;
+      }   
 
       &--heading {
          font-family: cursive; 
