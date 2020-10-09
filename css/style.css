@@ -120,7 +120,8 @@ h6 {
   background-size: cover;
   background-position: center center;
   clip-path: ellipse(90% 80% at 50% 20%);
-  height: 100vh; }
+  height: 100vh;
+  background-attachment: fixed; }
   @media only screen and (max-width: 81.25em) {
     .navbar {
       height: 80vh; } }
